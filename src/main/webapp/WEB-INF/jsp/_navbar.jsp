@@ -21,6 +21,14 @@ body {
 				<li class="nav-item"><a class="nav-link" href="/forsale">For Sale</a></li>
 				<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
 				<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+				<li class="nav-item"><a class="nav-link" href="/login">
+						<sec:authorize access="!isAuthenticated()">
+								Login
+						</sec:authorize>
+						<sec:authorize access="isAuthenticated()">
+								Logout
+						</sec:authorize>
+					</a></li>
 			</ul>
 		</div>
 	</div>
