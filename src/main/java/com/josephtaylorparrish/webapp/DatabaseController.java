@@ -20,7 +20,7 @@ import java.util.Map;
 
 @Controller
 @SpringBootApplication
-public class Main {
+public class DatabaseController {
 
   @Value("${spring.datasource.url}")
   private String dbUrl;
